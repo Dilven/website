@@ -1,4 +1,4 @@
-import { Intro } from "@/components/into";
+import { Intro } from "@/components/intro";
 
 export default function Home() {
   return (
