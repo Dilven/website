@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Navigation } from '@/components/navigation'
-import { lusitana } from './fonts'
+import { mainFont } from './fonts'
 
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={lusitana.className}>
+      <body className={`${mainFont.className} mx-auto max-w-[75%] py-8`}>
         <Navigation />
         {children}
       </body>
