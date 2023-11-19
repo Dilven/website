@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${mainFont.className} mx-auto max-w-[75%] py-8`}>
         <Navigation />
         {children}

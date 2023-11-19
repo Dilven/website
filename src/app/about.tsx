@@ -7,7 +7,7 @@ export const About = () => {
       <div className="flex justify- flex-col flex-3 gap-3">
         <h1 className="py-3">Hello! I&apos;m <RoughNotation type="underline" color="#81D2C7" show={true}>
           {" Krystian "}
-        </RoughNotation>, a passionate software engineer.</h1>
+        </RoughNotation>, a passionate software engineer. <span className="animate-waving">👋🏻</span></h1>
         <p>developer who loves building things, whether it&apos;s making the server do its magic or crafting beautiful, user-friendly interfaces.
           I have a special fondness for
           <RoughNotation type="highlight" color="#F84AA7" show={true}>

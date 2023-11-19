@@ -7,38 +7,33 @@ import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { logoFont } from "./fonts"
+import { NavigationMenuLink } from "@radix-ui/react-navigation-menu"
 
 export const Navigation = () => {
   return (
-    <div className="flex items-center text-2xl">
-      <Link href="/" passHref>
+    <div className="flex items-center text-2xl py-8">
+      <Link className={`text-slate-600 text-3xl ${logoFont.className}`} href="/" passHref>
         Krystian Mateusiak
       </Link>
       <NavigationMenu className="ml-auto">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="#about" passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <Link className={navigationMenuTriggerStyle()} href="#about" passHref>
                 About
-              </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="#projects" passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <Link className={navigationMenuTriggerStyle()} href="#projects" passHref>
                 Projects
-              </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="#contact" passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <Link className={navigationMenuTriggerStyle()} href="#contact" passHref>
                 Contact
-              </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
